@@ -1,0 +1,9 @@
+<a href="/articles/new">New Data</a> 
+<hr>
+
+<% @articles.each do |article| %>
+    <h5>
+        <a href="/articles/<%= article.id %>"><%=article.title%></a>
+    </h5>
+    <%=article.content%> <hr>
+<% end %>

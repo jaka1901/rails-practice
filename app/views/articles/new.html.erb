@@ -1,0 +1,15 @@
+<a href="/articles">Back</a> <br>
+
+<form action="/articles" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    <label for="title">
+        <input type="text" id="title" name="article[title]">
+    </label>
+    <label for="content">
+        <textarea type="text" id="content" name="article[content]" rows="4"></textarea>
+    </label>
+
+    <br>
+    <button type="submit">Submit</button>
+</form>
